@@ -128,7 +128,6 @@ Cross entropy hyper parameters can also be specified in the main block of `smm.p
 
 https://github.com/akshayshanker/Fempres/blob/ca1bbbdd995aad6f06d0ba3b35c5f2d2e1ff87cf/fempres/smm.py#L467C1-L470C10 
 
-
 The scratch drive should have at least 10GB of available space to allow for SMM IO operations.
 
 ## Repository Structure
