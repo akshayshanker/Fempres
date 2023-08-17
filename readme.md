@@ -122,7 +122,15 @@ Example HPC PBS job scripts are provided in `bashscripts` that configure a suita
 
 Before running `smm.py`, ensure to specify the appropriate scratch drive on your cluster in the main block of `smm.py`:
 
-https://github.com/akshayshanker/Fempres/blob/4043c6d881ebaa476614df792814b6667744a799/fempres/smm.py#L480C1-L486C71 
+
+    [```# Generate paths
+    # Folder for settings (where final estimates are saved) 
+    # Also declate declare scratch path. 
+    # Ensure scratch path has sufficient memory for saving 
+    # monte carlo draws. 
+    settings_folder = 'settings/'
+    scr_path = '/scratch/pv33/edu_model_temp/' + '/' + estimation_name```](https://github.com/akshayshanker/Fempres/blob/4043c6d881ebaa476614df792814b6667744a799/fempres/smm.py#L480C1-L486C71)
+    
 
 Cross entropy hyper parameters can also be specified in the main block of `smm.py`:
 
