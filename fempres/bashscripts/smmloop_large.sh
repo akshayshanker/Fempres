@@ -12,7 +12,8 @@ module load openmpi/4.0.7
 
 cd $HOME
 cd Fempres
-cd fempres  
+cd fempres
+cd fempres 
 
 mpiexec -n 14400  python3 -m mpi4py smm.py 1 Preliminary_all_v50_test Preliminary_all_v31 True True 8
  

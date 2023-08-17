@@ -6,7 +6,7 @@ by Dobrescu, Motta, and Shanker (2023)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/akshayshankere/fempres.git
+git clone https://github.com/akshayshankere/Fempres.git
 cd fempres 
 ```
 

@@ -10,7 +10,8 @@
 
 cd $HOME
 cd Fempres
-cd fempres  
+cd fempres
+cd fempres 
 
 
 module load python3/3.7.4

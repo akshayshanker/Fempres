@@ -35,6 +35,7 @@ def plot_results_all(moments_sim_all,
 
 	Todo
 	----
+	- Deprecate plotting functions in plot_profiles. replace with tabulate_functions module. 
 	"""
 
 	
@@ -167,7 +168,7 @@ def plot_results_paper2(moments_sim_all,
 			
 
 
-			if variable_list_names[i] == 'Book hours' or variable_list_names[i] == 'Game session hours':
+			if variable_list_names[i] == 'Book hours' or variable_list_names[i] == 'Time earning  happines units':
 				ax[k].set_ylim(0,60)
 				ax[k].set_yticks(np.arange(0, 60+1, 10.0))
 

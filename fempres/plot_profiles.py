@@ -159,7 +159,6 @@ def plot_results_paper2(moments_sim_all,
                     ax[k].axhline(y=2, color='grey', linestyle='-',linewidth=1)
                     ax[k].axhline(y=4, color='grey', linestyle='-', linewidth=1)
                     ax[k].set_xlim(1,11)
-                    print(ys) 
 
                 if variable_list_names[i] == 'Number of MCQ attempts':
                     ax[k].set_ylim(0,900)
