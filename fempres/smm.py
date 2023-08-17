@@ -47,6 +47,28 @@ from util.tabulate_functions import extract_moment_names
 
 warnings.filterwarnings('ignore')
 
+def ssd(diff):
+    """
+    Returns sum of square.\
+
+    Parameters
+    ---------
+    diff: float
+        vector of differences
+
+    Returns
+    -------
+
+    ssd: float
+        sum of squares 
+
+    """
+
+    
+
+    return np.dot( dif, dif )
+
+
 def gen_RMS(edu_model,\
             moments_data, \
             moment_weights,\
@@ -72,6 +94,9 @@ def gen_RMS(edu_model,\
     -------
     error : float64
         Error of the SMM objective.
+
+    Notes
+    ----
     """
 
     # Solve model and generate moments 
@@ -105,12 +130,12 @@ def gen_RMS(edu_model,\
 
     
     if use_weights == False:
-        RRMSE = 1-np.sqrt((1/N_err)*np.sum(np.abs(deviation_r))/1)
+        error = 1-ssd(deviation_r)/N_err
 
     else:
-        RRMSE = 1- np.dot(np.dot(deviation_r.T,moment_weights), deviation_r)/N_err
+        error = 1- np.dot(np.dot(deviation_r.T,moment_weights), deviation_r)/N_err
 
-    return RRMSE, deviation_r
+    return error, deviation_r
 
 
 def load_tm1_iter(tau_world, est_name, model_name, \

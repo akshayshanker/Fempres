@@ -100,8 +100,9 @@ Simulating the paper's baselines requires 8 CPUs and MPI:
 ```bash
 mpiexec -n 8  python3 -m mpi4py gen_baseline.py
 ```
+Ensure the desired estimation name is set in the main body of `gen_baseline.py` so that the correct estimates are read and correct file names are used when simulation results are saved.
 
-Ensure the desired estimation version is set in `gen_baseline.py`. New simulations will overwrite the previous ones in `settings/estimates`.
+New simulations will overwrite the previous ones in `settings/estimates` for the specified estimation name. 
 
 ### Counterfactual Simulations
 
@@ -111,11 +112,20 @@ mpiexec -n 18  python3 -m mpi4py gen_counterfactuals.py
 ```
 ### Simulated Method of Moments 
 
-Estimate parameters using the simulated method of moments using 5760 CPU cores:
+Following script estimates parameters using the simulated method of moments using 5760 CPU cores:
 ```bash
 mpiexec -n 5760  python3 -m mpi4py smm.py 1 test_1 test_1 True True 8
 ```
-The mpiexec command assumes a cluster with 5760 cores. Example HPC Torque job scripts are provided in `bashscripts`.
+The mpiexec command assumes a cluster with 5760 cores and names the estimates as `test_1` (see main body of script for system input definitions).
+
+Example HPC PBS job scripts are provided in `bashscripts` that configure a suitable cluster. 
+
+Before running `smm.py`, ensure to specify the appropriate scratch drive on your cluster in the main block of `smm.py`:
+
+https://github.com/akshayshanker/Fempres/blob/ca1bbbdd995aad6f06d0ba3b35c5f2d2e1ff87cf/fempres/smm.py#L455C1-L461C71
+
+
+The scratch drive should have at least 10GB of available space to allow for SMM IO operations.
 
 ## Repository Structure
 
