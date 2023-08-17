@@ -1,0 +1,4 @@
+OpenMPI:
+  version: 4.0.2
+Python:
+  version: 3.7.4

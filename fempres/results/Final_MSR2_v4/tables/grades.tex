@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in ,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=1.5\baselineskip}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\begin{document}
+\restoregeometry
+\thispagestyle{empty}\begin{table}[htbp]
+\caption{\textsc{Moment fit}}\label{table:fit}
+\centering
+\begin{tabular}{lccccc}
+\hline
+\hline
+\multicolumn{1}{c}{} & \multicolumn{2}{c}{Male Moments} &  & \multicolumn{2}{c}{Female Moments}\tabularnewline
+\cline{2-6}
+\multicolumn{1}{c}{} & Data  & Sim.  &  & Data  & Sim. \tabularnewline
+\hline
+
+ \textit{Final exam grade (out of 55)} &  & &  &  & \tabularnewline
+\hspace{0.4cm}Male President, Undisclosed Gender & 30.219 & 30.945 & {} & 29.990 & 29.993 \\
+    \hspace{0.4cm}Male President, Disclosed Gender & 30.308 & 33.520 & {} & 28.781 & 29.099 \\
+\hspace{0.4cm}Female President, Undisclosed Gender & 30.057 & 33.032 & {} & 28.633 & 29.365 \\
+  \hspace{0.4cm}Female President, Disclosed Gender & 30.079 & 32.225 & {} & 30.869 & 30.327 \\
+ \textit{Overall course grade (out of 100)} &  & &  &  & \tabularnewline
+\hspace{0.4cm}Male President, Undisclosed Gender & 74.999 & 75.945 & {} & 74.439 & 74.990 \\
+    \hspace{0.4cm}Male President, Disclosed Gender & 75.078 & 78.520 & {} & 72.931 & 74.099 \\
+\hspace{0.4cm}Female President, Undisclosed Gender & 74.335 & 78.032 & {} & 73.245 & 74.365 \\
+  \hspace{0.4cm}Female President, Disclosed Gender & 74.283 & 77.224 & {} & 75.036 & 75.213 \\
+\hline
+\end{tabular}
+
+\end{table}
+\end{document}

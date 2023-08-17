@@ -1,0 +1,68 @@
+moment_names:
+     - means:
+          - av_final_grade
+          - av_course_grade
+          - av_final_grade_exp
+          - av_knowledge_cumul
+          - av_sim_session_hours_cumul
+          - av_ebook_session_hours_cumul
+          - av_mcq_session_hours_cumul
+          - av_saq_session_hours_cumul
+          - av_happy_deploym_cumul
+          - av_mcq_cumul
+          - av_saq_cumul
+          - av_totebook_pageviews_cumul
+     - Standard deviations:
+          - sd_final_grade
+          - sd_course_grade
+          - sd_final_grade_exp
+          - sd_knowledge_cumul
+          - sd_sim_session_hours_cumul
+          - sd_ebook_session_hours_cumul
+          - sd_mcq_session_hours_cumul
+          - sd_saq_session_hours_cumul
+          - sd_happy_deploym_cumul
+          - sd_mcq_cumul
+          - sd_saq_cumul
+          - sd_totebook_pageviews_cumul
+     - Autocorrelations:
+          - acsim_session_hours
+          - acebook_session_hours
+          - acmcq_session_hours
+          - acsaq_session_hours
+          - actotebook_pageviews
+          - acmcq_Cattempt
+     - Correlations (pairwise corrs. weekly cumul hours between study types):
+          - co_mcsaq_session_hours
+          - co_simsaq_session_hours
+          - co_simmcq_session_hours
+          - co_esaq_session_hours
+          - co_emcq_session_hours
+          - co_esim_session_hours
+     - Correlations (pairwise week by week cumul,  final exam):
+          - co_fsim_session_hours_cumul
+          - co_febook_session_hours_cumul
+          - co_fmcq_session_hours_cumul
+          - co_fsaq_session_hours_cumul
+          - co_fhappy_deploym_cumul
+          - co_ftotebook_pageviews_cumul
+          - co_fmcq_cumul
+          - co_fsaq_cumul
+     - Correlations (week by week hours between study hours and output for each type):
+          - co_sim
+          - co_ebook
+          - co_mcq
+          - co_saq
+     - Correlations (weekly hours sum two types of study pairs, final exam):
+          - cesim_session_hours
+          - cemcq_session_hours
+          - cesaq_session_hours
+          - csimmcq_session_hours
+          - csimsaq_session_hours
+          - cmcsaq_session_hours
+     - Corr_final_atar:
+          - co_fatar_ii
+exclude:
+     - av_knowledge_cumul
+     - sd_knowledge_cumul
+

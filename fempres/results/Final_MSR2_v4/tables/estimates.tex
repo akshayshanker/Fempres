@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in ,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=1.5\baselineskip}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\begin{document}
+\restoregeometry
+\newgeometry{left=1cm, right=2cm, top=1cm, bottom=0.5cm}\begin{landscape}
+\begin{table}[htbp]
+\caption{\textsc{Parameter estimates}}\label{table:estimates_male_pres}
+\centering
+\begin{tabular}{lcccccccccc}
+\hline
+\hline& & \multicolumn{4}{c}{Undisclosed Gender} &\multicolumn{4}{c}{Disclosed Gender}\\
+\cmidrule(l{0.2cm}r{0.3cm}){3-6}\cmidrule(l{0.2cm}r{0.3cm}){7-10}
+& & \multicolumn{2}{c}{Males} &\multicolumn{2}{c}{Females} & \multicolumn{2}{c}{Males} &\multicolumn{2}{c}{Females}\\
+\cmidrule(l{0.2cm}r{0.3cm}){3-4}\cmidrule(l{0.2cm}r{0.3cm}){5-6}\cmidrule(l{0.2cm}r{0.3cm}){7-8} \cmidrule(l{0.2cm}r{0.3cm}){9-10}
+& & Estimates  & S.E.  & Estimates  & S.E. & Estimates  & S.E. & Estimates  & S.E. & \tabularnewline
+ &  &  (1) & (2) & (3)  & (4) & (5) & (6) & (7) & (8) \\
+\hline
+\\
+\textit{\textbf{Panel A: Male President}} & & & & & & & & & \\
+
+                        Course grade utility weight &                       $\alpha$ & 0.039 & 0.000 & 0.053 & 0.000 & 0.022 & 0.000 &  0.018 & 0.000 \\
+                 Exponential discount factor & & & & & & & & & \\
+\hspace{0.4cm}Discount factor mean &                  $\bar{\beta}$ & 0.806 & 0.001 & 0.834 & 0.002 & 0.861 & 0.007 &  0.817 & 0.005 \\
+          \hspace{0.4cm}Discount factor persistence &                 $\rho_{\beta}$ & 0.028 & 0.003 & 0.707 & 0.006 & 0.572 & 0.007 &  0.725 & 0.001 \\
+       \hspace{0.4cm}Discount factor std. deviation &               $\sigma_{\beta}$ & 1.901 & 0.018 & 1.052 & 0.033 & 1.548 & 0.014 &  1.199 & 0.031 \\
+                         Hyperbolic discount factor &                       $\delta$ & 0.043 & 0.000 & 0.011 & 0.000 & 0.016 & 0.000 &  0.048 & 0.000 \\
+                    \hline
+Effort cost in relation to & & & & & & & & & \\
+\hspace{0.4cm}Time solving MCQs &                      $e^{mcq}$ & 1.104 & 0.029 & 1.937 & 0.024 & 1.332 & 0.055 &  1.410 & 0.040 \\
+         \hspace{0.4cm}Time earning happiness units &                      $e^{sim}$ & 0.422 & 0.044 & 1.700 & 0.035 & 1.133 & 0.059 & -0.320 & 0.034 \\
+                  \hspace{0.4cm}Time answering SAQs &                      $e^{saq}$ & 1.953 & 0.043 & 3.864 & 0.041 & 2.973 & 0.066 &  3.492 & 0.082 \\
+           \hspace{0.4cm}Time studying the textbook &                     $e^{book}$ & 0.091 & 0.017 & 0.703 & 0.019 & 0.501 & 0.017 & -0.542 & 0.028 \\
+                       Knowledge stock depreciation &                            $d$ & 0.195 & 0.001 & 0.254 & 0.013 & 0.356 & 0.002 &  0.176 & 0.014 \\
+                         \hline
+Effectiveness in knowledge creation in relation to & & & & & & & & & \\
+\hspace{0.4cm}Solving MCQs &                 $\gamma^{mcq}$ & 0.328 & 0.008 & 0.171 & 0.019 & 0.099 & 0.031 &  0.191 & 0.031 \\
+                       \hspace{0.4cm}Answering SAQs &                 $\gamma^{saq}$ & 0.161 & 0.009 & 0.200 & 0.013 & 0.154 & 0.008 &  0.465 & 0.010 \\
+                \hspace{0.4cm}Studying the textbook &                $\gamma^{book}$ & 0.394 & 0.008 & 0.518 & 0.019 & 0.702 & 0.050 &  0.320 & 0.027 \\
+                   Study elasticity of substitution &                   $1/(1-\rho)$ & 0.674 & 0.010 & 0.691 & 0.018 & 0.667 & 0.013 &  0.468 & 0.015 \\
+            Knowledge effectiveness of study output &                    $\vartheta$ & 1.086 & 0.000 & 0.963 & 0.001 & 1.162 & 0.000 &  1.081 & 0.000 \\
+                    Final exam difficulty parameter &                    $\lambda^E$ & 0.005 & 0.000 & 0.006 & 0.000 & 0.007 & 0.000 &  0.008 & 0.000 \\
+               \hline
+Final exam ability & & & & & & & & & \\
+\hspace{0.4cm}Real exam ability mean &                          $\xi$ & 2.886 & 0.001 & 3.176 & 0.004 & 4.137 & 0.001 &  3.042 & 0.009 \\
+     \hspace{0.4cm}Real exam ability std. deviation & $\sigma_{\varepsilon^\xi{^*}}$ & 2.366 & 0.001 & 1.571 & 0.001 & 1.719 & 0.016 &  0.830 & 0.010 \\
+          \hspace{0.4cm}Perceived exam ability mean &                        $\xi^*$ & 4.609 & 0.007 & 3.996 & 0.001 & 5.204 & 0.006 &  4.405 & 0.004 \\
+\hspace{0.4cm}Perceived exam ability std. deviation &     $\sigma_{\varepsilon^\xi}$ & 1.852 & 0.000 & 1.693 & 0.004 & 0.822 & 0.009 &  0.912 & 0.001 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+
+\begin{landscape}
+\begin{table}[htbp]
+\caption{\textsc{Parameter estimates}}\label{table:estimates_female_pres}
+\centering
+\begin{tabular}{lcccccccccc}
+\hline
+\hline& & \multicolumn{4}{c}{Undisclosed Gender} &\multicolumn{4}{c}{Disclosed Gender}\\
+\cmidrule(l{0.2cm}r{0.3cm}){3-6}\cmidrule(l{0.2cm}r{0.3cm}){7-10}
+& & \multicolumn{2}{c}{Males} &\multicolumn{2}{c}{Females} & \multicolumn{2}{c}{Males} &\multicolumn{2}{c}{Females}\\
+\cmidrule(l{0.2cm}r{0.3cm}){3-4}\cmidrule(l{0.2cm}r{0.3cm}){5-6}\cmidrule(l{0.2cm}r{0.3cm}){7-8} \cmidrule(l{0.2cm}r{0.3cm}){9-10}
+& & Estimates  & S.E.  & Estimates  & S.E. & Estimates  & S.E. & Estimates  & S.E. & \tabularnewline
+ &  &  (1) & (2) & (3)  & (4) & (5) & (6) & (7) & (8) \\
+\hline
+\\
+\textit{\textbf{Panel B: Female President}} & & & & & & & & & \\
+
+                        Course grade utility weight &                       $\alpha$ &  0.011 & 0.000 &  0.016 & 0.000 &  0.021 & 0.000 &  0.015 & 0.000 \\
+                 Exponential discount factor & & & & & & & & & \\
+\hspace{0.4cm}Discount factor mean &                  $\bar{\beta}$ &  0.841 & 0.002 &  0.851 & 0.002 &  0.834 & 0.005 &  0.842 & 0.008 \\
+          \hspace{0.4cm}Discount factor persistence &                 $\rho_{\beta}$ &  0.762 & 0.005 &  0.635 & 0.010 &  0.684 & 0.008 &  0.566 & 0.004 \\
+       \hspace{0.4cm}Discount factor std. deviation &               $\sigma_{\beta}$ &  1.026 & 0.097 &  0.910 & 0.015 &  1.755 & 0.032 &  1.892 & 0.026 \\
+                         Hyperbolic discount factor &                       $\delta$ &  0.026 & 0.000 &  0.049 & 0.000 &  0.028 & 0.000 &  0.063 & 0.000 \\
+                    \hline
+Effort cost in relation to & & & & & & & & & \\
+\hspace{0.4cm}Time solving MCQs &                      $e^{mcq}$ &  1.517 & 0.038 &  1.518 & 0.043 &  1.239 & 0.024 &  1.050 & 0.013 \\
+         \hspace{0.4cm}Time earning happiness units &                      $e^{sim}$ & -0.238 & 0.035 & -0.144 & 0.017 & -0.384 & 0.012 &  0.471 & 0.010 \\
+                  \hspace{0.4cm}Time answering SAQs &                      $e^{saq}$ &  3.502 & 0.088 &  3.713 & 0.080 &  2.874 & 0.026 &  1.519 & 0.020 \\
+           \hspace{0.4cm}Time studying the textbook &                     $e^{book}$ & -0.360 & 0.016 & -0.431 & 0.014 & -0.574 & 0.006 & -0.118 & 0.010 \\
+                       Knowledge stock depreciation &                            $d$ &  0.218 & 0.023 &  0.197 & 0.007 &  0.225 & 0.014 &  0.259 & 0.006 \\
+                         \hline
+Effectiveness in knowledge creation in relation to & & & & & & & & & \\
+\hspace{0.4cm}Solving MCQs &                 $\gamma^{mcq}$ &  0.041 & 0.009 &  0.080 & 0.025 &  0.118 & 0.023 &  0.189 & 0.035 \\
+                       \hspace{0.4cm}Answering SAQs &                 $\gamma^{saq}$ &  0.431 & 0.007 &  0.569 & 0.017 &  0.463 & 0.020 &  0.535 & 0.036 \\
+                \hspace{0.4cm}Studying the textbook &                $\gamma^{book}$ &  0.406 & 0.008 &  0.244 & 0.025 &  0.315 & 0.016 &  0.071 & 0.042 \\
+                   Study elasticity of substitution &                   $1/(1-\rho)$ &  0.802 & 0.013 &  0.733 & 0.037 &  0.761 & 0.033 &  0.207 & 0.051 \\
+            Knowledge effectiveness of study output &                    $\vartheta$ &  1.060 & 0.004 &  1.050 & 0.000 &  1.228 & 0.002 &  1.081 & 0.001 \\
+                    Final exam difficulty parameter &                    $\lambda^E$ &  0.006 & 0.000 &  0.007 & 0.000 &  0.009 & 0.000 &  0.008 & 0.000 \\
+               \hline
+Final exam ability & & & & & & & & & \\
+\hspace{0.4cm}Real exam ability mean &                          $\xi$ &  3.625 & 0.001 &  3.143 & 0.007 &  2.056 & 0.014 &  3.064 & 0.001 \\
+     \hspace{0.4cm}Real exam ability std. deviation & $\sigma_{\varepsilon^\xi{^*}}$ &  1.568 & 0.001 &  1.162 & 0.007 &  2.659 & 0.003 &  1.886 & 0.002 \\
+          \hspace{0.4cm}Perceived exam ability mean &                        $\xi^*$ &  4.713 & 0.002 &  4.482 & 0.007 &  3.597 & 0.004 &  4.541 & 0.001 \\
+\hspace{0.4cm}Perceived exam ability std. deviation &     $\sigma_{\varepsilon^\xi}$ &  1.261 & 0.008 &  0.712 & 0.002 &  3.282 & 0.003 &  1.494 & 0.003 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+\end{landscape}
+\end{document}

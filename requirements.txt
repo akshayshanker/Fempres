@@ -1,0 +1,11 @@
+dill==0.3.4
+tabulate==0.8.7
+quantecon==0.4.7
+scipy==1.4.1
+numpy==1.18.4
+mpi4py==3.1.2
+pandas==1.2.0
+interpolation==2.1.6
+sklearn==0.0
+matplotlib==3.1.1
+numba==0.50.1
