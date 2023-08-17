@@ -125,7 +125,7 @@ Before running `smm.py`, ensure to specify the appropriate scratch drive on your
 
     # Generate paths
     # Folder for settings (where final estimates are saved) 
-    # Also declate declare scratch path. 
+    # Also declare scratch path. 
     # Ensure scratch path has sufficient memory for saving 
     # monte carlo draws. 
     settings_folder = 'settings/'
