@@ -118,7 +118,7 @@ mpiexec -n 5760  python3 -m mpi4py smm.py 1 test_1 test_1 True True 8
 ```
 The mpiexec command assumes a cluster with 5760 cores and names the estimates as `test_1` (see main body of script for system input definitions).
 
-Example HPC PBS job scripts are provided in `bashscripts` that configure a suitable cluster. 
+Example HPC PBS job scripts are provided in `bashscripts` to configure a suitable cluster. 
 
 Before running `smm.py`, ensure to specify the appropriate scratch drive on your cluster in the main block of `smm.py`:
 
