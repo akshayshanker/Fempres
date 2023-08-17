@@ -7,7 +7,6 @@ by Dobrescu, Motta, and Shanker (2023)
 1. Clone the repository:
 ```bash
 git clone https://github.com/akshayshankere/Fempres.git
-cd fempres 
 ```
 
 2. Set up the primary configuration with `config.yaml` located at the repository root. The primary configuration consists of:
