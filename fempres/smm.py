@@ -66,7 +66,7 @@ def ssd(diff):
 
     
 
-    return np.dot( dif, dif )
+    return np.dot( diff, diff )
 
 
 def gen_RMS(edu_model,\
