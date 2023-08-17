@@ -2,6 +2,8 @@
 # Repository for 'The Power of Knowing a Woman is In Charge: Lessons From a Randomized Experiment'
 by Dobrescu, Motta, and Shanker (2023)
 
+Paper available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4483603).
+
 ## Setting Up Locally
 
 1. Clone the repository:
