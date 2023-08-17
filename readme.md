@@ -123,19 +123,21 @@ Example HPC PBS job scripts are provided in `bashscripts` that configure a suita
 Before running `smm.py`, ensure to specify the appropriate scratch drive on your cluster in the main block of `smm.py`:
 
 
-    [```# Generate paths
+    ```# Generate paths
     # Folder for settings (where final estimates are saved) 
     # Also declate declare scratch path. 
     # Ensure scratch path has sufficient memory for saving 
     # monte carlo draws. 
     settings_folder = 'settings/'
-    scr_path = '/scratch/pv33/edu_model_temp/' + '/' + estimation_name```](https://github.com/akshayshanker/Fempres/blob/4043c6d881ebaa476614df792814b6667744a799/fempres/smm.py#L480C1-L486C71)
+    scr_path = '/scratch/pv33/edu_model_temp/' + '/' + estimation_name```
     
 
 Cross entropy hyper parameters can also be specified in the main block of `smm.py`:
 
-https://github.com/akshayshanker/Fempres/blob/ca1bbbdd995aad6f06d0ba3b35c5f2d2e1ff87cf/fempres/smm.py#L467C1-L470C10 
-
+    ``` # Cross-Entropy estimation parameters  
+    tol = 1E-3
+    N_elite = 40
+    d = 3```
 The scratch drive should have at least 10GB of available space to allow for SMM IO operations.
 
 ## Repository Structure
